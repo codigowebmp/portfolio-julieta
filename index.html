@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Julieta</title>
+</head>
+
+<body>
+    <header>
+        <h1>Julieta</h1>
+        <nav>
+            <ul>
+                <li class="link-seleccionado"><a href="#inicio">Inicio</a></li>
+                <li><a href="#">Sobre Mi</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <a href="#" class="btn-comprar">Comprar Ahora</a>
+        </nav>
+        <div class="nav-bar" id="nav-bar"><i class="fa-solid fa-bars"></i></div>
+    </header>
+
+    <section id="inicio">
+        <div class="contenido">
+            <div class="info">
+                <h3>INSPIRACIÓN</h3>
+                <span>Ui & Ux Designer</span>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="contenedor-img">
+            <div class="imagen"></div>
+        </div>
+    </section>
+
+    <script>
+        let nav_var = document.getElementById("nav-bar");
+        let menu_responsive = "oculto";
+
+        nav_var.onclick = function() {
+            if (menu_responsive == "oculto") {
+                document.querySelector("nav").className = "active";
+                menu_responsive = "visible"
+            } else {
+                document.querySelector("nav").className = "";
+                menu_responsive = "oculto";
+            }
+        }
+    </script>
+</body>
+
+</html>
